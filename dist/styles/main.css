@@ -78,6 +78,9 @@ body .container .widget-user .user-info .avatar, body .container .widget-user .u
 body .container .widget-user .user-info .avatar h1, body .container .widget-user .user-info .user-text h1 {
   font-size: 26px;
 }
+body .container .widget-user .user-info .avatar h2, body .container .widget-user .user-info .user-text h2 {
+  font-size: 12px;
+}
 body .container .widget-user .user-info .avatar {
   display: inline-block;
   position: relative;
