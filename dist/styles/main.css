@@ -1,17 +1,67 @@
-.padding-sides-0 {
-  padding-left: 0;
-  padding-right: 0;
-}
-
 body {
   padding: 0;
   margin: 0;
 }
 body .container {
+  min-height: 700px;
   background: linear-gradient(0deg, #FFFFFF, #B5651D);
 }
-body .container .widget-user, body .container .avatar, body .container .user-text, body .container .user-buttons {
+body .container .widget-user, body .container .avatar, body .container .user-text, body .container .user-buttons, body .container .widget-email {
   background-color: #FFFFFF;
+}
+body .container .widget-email {
+  padding: 30px;
+  border-radius: 7px;
+}
+body .container .widget-email label {
+  font-weight: normal;
+}
+body .container .widget-email .border-box {
+  border: 1px solid #e5d4c2;
+  padding: 5px;
+  margin-bottom: 20px;
+  border-radius: 7px;
+  min-height: 35px;
+  height: auto;
+}
+body .container .widget-email .border-box input, body .container .widget-email .border-box input:focus, body .container .widget-email .border-box textarea, body .container .widget-email .border-box textarea:focus {
+  outline: none;
+  border: none;
+  width: 100%;
+}
+body .container .widget-email .border-box textarea {
+  resize: none;
+  overflow: hidden;
+  overflow-style: none;
+}
+body .container .widget-email .border-box .add-email {
+  background: #ede3dd;
+  border: none;
+  border-radius: 7px;
+  height: 33px;
+  width: 33px;
+  font-weight: bold;
+  outline: none;
+}
+body .container .widget-email .new-email input, body .container .widget-email .new-email input:focus {
+  width: 80%;
+}
+body .container .widget-email .send {
+  height: 10px;
+  margin-bottom: 20px;
+}
+body .container .widget-email .send .savecopy {
+  float: left;
+}
+body .container .widget-email .send .savecopy input[type=checkbox] {
+  transform: scale(1.2);
+  border-radius: 4px;
+}
+body .container .widget-email .send .savecopy label {
+  margin-left: 5px;
+}
+body .container .widget-email .send .send-btn {
+  float: right;
 }
 body .container .widget-user {
   border-radius: 7px;

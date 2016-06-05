@@ -5,12 +5,50 @@
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 	<link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
 	<link href='dist/styles/main.min.css' rel='stylesheet' type='text/css'>
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>	
 </head>
 <body>
 	<div class="container">
-		<!-- The User-Info Widget -->
-		<div class="col-xs-12 col-md-offset-8 col-md-4">
+		<!-- The Email Widget -->
+		<div class="col-xs-12 col-md-4">
+			<div class="widget-email">
+				<label for="contacts">Contacts*</label>
+				<div class="border-box email-buttons">
+					<button type="button" class="add-email">+</button>
+				</div>
+
+				<div class="new-email">
+					<label for="new-email">Add Contact</label>
+					<div class="border-box">
+						<input id="new-email" type="text" name="new-email" placeholder="Please add a valid email address" />
+						<button type="button" class="append-email">+</button>
+					</div>
+				</div>
+
+
+				<label for="subject">Subject*</label>
+				<div class="border-box">
+					<input type="text" name="subject" placeholder="You can add a subject" required />
+				</div>
+				<label for="message">Message*</label>
+				<div class="border-box">
+					<textarea type="text" name="message" placeholder="Leave your message here" required></textarea>
+				</div>				
+				<div class="send">
+					<div class="savecopy">
+						<input type="checkbox" name="savecopy" />
+						<label for="savecopy">Save a copy</label>
+					</div>
+					<div class="send-btn">
+						<button type="button" class="btn btn-danger">Send Mail</button>
+					</div>
+				</div>
+			</div>
+		</div>	
+		<!-- The User-Info Widget -->		
+		<div class="col-xs-12 col-md-4">
 			<div class="widget-user">
 				<div class="userImg">
 					<img class="img-responsive" src="#" alt="User Image" />
@@ -47,7 +85,6 @@
 			</div>
 		</div>
 	</div>
-	<script src="dist/scripts/dummy.js"></script>
-	<script src="dist/scripts/main.js"></script>
+	<script src="dist/scripts/all.js"></script>
 </body>
 </html>

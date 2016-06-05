@@ -1,0 +1,117 @@
+	body {
+		padding: 0;
+		margin: 0;	
+		& .container{
+			min-height: 700px;
+			background: linear-gradient( 0deg, #FFFFFF, #B5651D);
+			& .widget-user, .avatar, .user-text, .user-buttons, .widget-email{
+				background-color: #FFFFFF;
+			}
+			& .widget-email{
+				padding: 30px;
+				border-radius: 7px;
+				& label{
+					font-weight: normal;
+				}
+				& .border-box{
+					border: 1px solid #e5d4c2;
+					padding: 5px;
+					margin-bottom: 20px;
+					border-radius: 7px;
+					min-height: 35px;
+					height: auto;
+					& input, input:focus, textarea, textarea:focus {
+						outline: none;
+						border: none;
+						width: 100%;
+					}
+					& textarea{
+						resize: none;
+						overflow: hidden;
+						overflow-style: none;
+					}
+					& .add-email{
+						background: #ede3dd;
+						border: none;
+						border-radius: 7px;
+						height: 33px;
+						width: 33px;
+						font-weight: bold;
+						outline: none;
+					}
+				}
+				& .new-email{
+					& input, input:focus{
+						width: 80%;
+					}
+				}				
+				& .send{
+					height: 10px;
+					margin-bottom: 20px;
+					& .savecopy{
+						float: left;
+						& input[type=checkbox]{
+							transform: scale(1.2);
+							border-radius: 4px;
+						}
+						& label{
+							margin-left: 5px;
+						}
+					}
+					& .send-btn{
+						float: right;
+					}
+				}
+			}
+			& .widget-user{
+				border-radius: 7px;
+				overflow: hidden;
+				& .userImg{				
+				}				
+				& .user-info{
+					& .avatar, .user-text{
+						height: 140px;
+						font-family: 'Open Sans', sans-serif;
+						& h1{
+							font-size: 26px;
+						}
+					}
+					& .avatar {
+						display: inline-block;
+						position: relative;
+						-webkit-clip-path: circle(35px at center);
+						clip-path: circle(35px at center);
+						background: #e0ddd9;	
+						height: 90px;					
+						& img{
+							position: absolute;
+						    -webkit-clip-path: circle(25px at center);
+							margin-top: 25px;
+							height: 50px;
+							width: 50px;
+						}
+					}
+					& .user-buttons{
+						padding: 0;
+						font-family: 'Open Sans', sans-serif;
+						& .usr-btn{
+						height: 50px;
+						width: 33.33%;
+						text-align: center;
+						line-height: 50px;
+						cursor: pointer;		
+						background-color: #f6f1ed;
+						color: #000000;
+							& .glyphicon{
+								display: inline-block;
+								margin-right: 5px;
+							}
+							&:hover{
+								color: #e26f4d;
+							}
+						}
+					}
+				}
+			}		
+		}
+	}
