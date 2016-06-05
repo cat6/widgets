@@ -10,6 +10,9 @@
 			& .widget-email{
 				padding: 30px;
 				border-radius: 7px;
+				& button{
+					outline: none;
+				}
 				& label{
 					font-weight: normal;
 				}
@@ -60,6 +63,7 @@
 					}
 					& .send-btn{
 						float: right;
+						outline: none;
 					}
 				}
 			}

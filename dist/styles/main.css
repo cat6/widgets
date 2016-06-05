@@ -13,6 +13,9 @@ body .container .widget-email {
   padding: 30px;
   border-radius: 7px;
 }
+body .container .widget-email button {
+  outline: none;
+}
 body .container .widget-email label {
   font-weight: normal;
 }
@@ -62,6 +65,7 @@ body .container .widget-email .send .savecopy label {
 }
 body .container .widget-email .send .send-btn {
   float: right;
+  outline: none;
 }
 body .container .widget-user {
   border-radius: 7px;
