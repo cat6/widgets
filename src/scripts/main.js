@@ -51,23 +51,23 @@ $(document).ready(function(){
 		}
 	});
 
-	$(".email-buttons .btn").click(function(){
+	$(document).on('click','.email-buttons .btn', function(){
 		var emailToRemove = $(this).val();
-		console.log("removing: " + emailToRemove);
-
 		for (var i=addresses.length - 1; i >= 0; i--) {
 		    if (addresses[i] === emailToRemove) {
 		        addresses.splice(i, 1);
-		        // break;       //<-- Uncomment  if only the first term has to be removed
 		    }
 		}
-		console.log("addresses: " + typeof addresses);
 		drawEmailBtns(addresses, btnStyles);
 	});
 
 	$("#send-mail").click(function(){
 		if($("#subject").val() == null || $("#subject").val() == "" || $("#message").val() == null || $("#message").val() == ""){
 			alert("Please fill out both the Subject and Message fields");
+			return;
+		}
+		if(addresses.length <= 0){
+			alert("Please enter a contact to email");
 			return;
 		}
 		var dataToSubmit = {
